@@ -1,0 +1,139 @@
+body {
+    background-color: white;
+    font-size: 100%;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    
+}
+
+h1  {
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    color: black;
+    font-size: 300%;
+    margin-bottom: 40px;
+}
+
+img, .eightball, .empty-eight-ball {
+    width: 35%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 40px;
+    position: relative;
+    animation: (shake, .3s);
+    -webkit-animation: (shake, .3s);
+
+}
+
+
+
+
+.empty-eight-ball {
+    width: 0%;
+}
+
+.shake {
+    position:relative;
+    animation: shake 1s;
+    -webkit-animation: shake 1s;
+}
+    @keyframes shake {
+        0% {
+            left:0px;
+        }
+        20% {
+            left: -15px;
+        }
+        40% {
+            left: 15px;
+        }
+        60% {
+            left: -15px;
+        }
+        80% {
+            left: 15px;
+        }
+        100% {
+            left: 0px;
+        }
+
+    }
+
+
+
+
+.button {
+    display: block;
+    margin: 0 auto 10px auto;
+    width: 25%;
+    padding: 10px;
+
+    
+    
+}
+
+button {
+    font-family: 'Rajdhani', Times, serif;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: large;
+    border: none;
+    cursor: pointer;  
+}
+
+
+button:hover {
+    transition-property: font-size;
+    font-size: larger;
+    transition-duration: 1s;
+   
+}
+
+.form {
+    display: flex;
+    margin: 0 auto 10px auto;
+   
+    border-color: black;
+    width: 50%;
+    padding-top: 0;
+}
+
+input {
+    width: 80%;
+    text-align: center;
+    font-family: 'Rajdhani', 'Times New Roman', Times, serif;
+    padding: 10px;
+    font-size: 100%;
+
+
+}
+
+
+.response {
+    text-align: center;
+    background-color: #E0E8ED;
+    color: black;
+    font-family: 'Rajdhani' ;
+    font-size: 200%;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 770px;
+    bottom: 460px;
+    padding: 5px;
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
